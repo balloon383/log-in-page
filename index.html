@@ -10,37 +10,44 @@
 <body>
     <div class="log-in-wrapper">
         <div class="log-in-box">
-            <div class="content-conrainer">
-                <p>
-                    Вход
+            <div class="content-container">
+                <p class="switcher">
+                    <span>Вход</span>
                     <input type="checkbox" name="">
-                    Регистрация
+                    <label for="checkbox"></label>
+                    <span>Регистрация</span>
                 </p>
                 <h2>Вход</h2>
-                <p> 
+                <p class="input-area"> 
                     <input type="text" placeholder="Введите E-mail">
                     <input type="text" placeholder="Пароль">
                 </p>
-                <p>
+                <p class="remember-me-box">
                     <input type="checkbox" name="remember-me">
                     <span>Запомнить меня</span>
                     <a href="#">Забыли пароль?</a>
                 </p>
-                <button>Войти</button>
-                <p> 
+                <button class="log-in-button">Войти</button>
+                <p class="register-box"> 
                     <span>Ещё нет аккаунта?</span>
                     <a href="#">Зарегестрироваться</a>
                 </p>
-                <p>Или войдите через</p>
-                <svg class="icon">
-                    <use xlink:href="./images/icons/sprite.svg#facebook"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="./images/icons/sprite.svg#instagram"></use>
-                </svg>
-                <svg class="icon">
-                    <use xlink:href="./images/icons/sprite.svg#linkedin"></use>
-                </svg>
+                <p class="alternative-login-box">Или войдите через</p>
+                <a href="">
+                    <svg class="facebook">
+                        <use xlink:href="./images/icons/sprite.svg#facebook"></use>
+                    </svg> 
+                </a>
+                <a href="">
+                    <svg class="instagram">
+                        <use xlink:href="./images/icons/sprite.svg#instagram"></use>
+                    </svg>  
+                </a>
+                <a href="">
+                    <svg class="linkedin">
+                        <use xlink:href="./images/icons/sprite.svg#linkedin"></use>
+                    </svg>  
+                </a>
             </div>
         </div>
     </div>
