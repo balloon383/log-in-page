@@ -53,21 +53,19 @@ a{
     transform: translate(-50px, 12px);
 }
 .switcher input + label::before{
-    position: absolute;
     content: '';
+    position: absolute;
     background: #153416;
     border-radius: 30px;
     width: 168px;
     height: 32px;
-    z-index: -1;
     top: 2px;
     left: 2px;
+    transform: translate(0%, 0%);
+    transition: transform .3s linear;
 }
 .switcher input:checked + label::before{
-    left: auto;
-    top: 2px;
-    right: 3px;
-    transition: all .3 linear;
+    transform: translate(100%, 0);
 }
 
 /* ---log-In--- */
@@ -97,6 +95,7 @@ h2{
 .remember-me-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 30px;
 }
 .remember-me-box .remember-checkbox{
@@ -105,6 +104,7 @@ h2{
 .remember-check{
     position: relative;
     padding-left: 20px;
+    padding-top: 3px;
     cursor: pointer;
 }
 .remember-check::before{
@@ -140,6 +140,7 @@ h2{
     border-radius: 30px;
     color: white;
     margin-bottom: 55px;
+    font-size: 12px;
 }
 /* ---register-box--- */
 .register-box {
