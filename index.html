@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +8,63 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="log-in-wrapper">
         <div class="log-in-box">
             <div class="content-container">
                 <p class="switcher">
-                    <span>Вход</span>
-                    <input type="checkbox" name="">
-                    <label for="checkbox"></label>
-                    <span>Регистрация</span>
+                    <input class="checkbox" type="checkbox" id="checkbox">
+                    <label class="label-checkbox" for="checkbox">
+                        <span class="log-in">Вход</span>
+                        <span class="register">Регистрация</span>
+                    </label>
                 </p>
                 <h2>Вход</h2>
-                <p class="input-area"> 
+                <p class="input-area">
                     <input type="text" placeholder="Введите E-mail">
                     <input type="text" placeholder="Пароль">
                 </p>
                 <p class="remember-me-box">
-                    <input type="checkbox" name="remember-me">
-                    <span>Запомнить меня</span>
+                    <input class="remember-checkbox" type="checkbox" id="remember">
+                    <label class="remember-check" for="remember">Запомнить меня</label>
                     <a href="#">Забыли пароль?</a>
                 </p>
                 <button class="log-in-button">Войти</button>
-                <p class="register-box"> 
+                <p class="register-box">
                     <span>Ещё нет аккаунта?</span>
                     <a href="#">Зарегестрироваться</a>
                 </p>
                 <p class="alternative-login-box">Или войдите через</p>
-                <a href="">
-                    <svg class="facebook">
-                        <use xlink:href="./images/icons/sprite.svg#facebook"></use>
-                    </svg> 
-                </a>
-                <a href="">
-                    <svg class="instagram">
-                        <use xlink:href="./images/icons/sprite.svg#instagram"></use>
-                    </svg>  
-                </a>
-                <a href="">
-                    <svg class="linkedin">
-                        <use xlink:href="./images/icons/sprite.svg#linkedin"></use>
-                    </svg>  
-                </a>
+                <ul class="icon-box">
+                    <li>
+                        <a href="">
+                            <svg class="facebook">
+                                <use xlink:href="./images/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="instagram">
+                                <use xlink:href="./images/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg class="linkedin">
+                                <use xlink:href="./images/icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+
+
             </div>
         </div>
     </div>
 </body>
+
 </html>

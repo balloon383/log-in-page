@@ -2,37 +2,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: gray;
+    background: url(../images/bg.png) no-repeat 50%/cover;
+    font-size: 12px;
 }
 .log-in-wrapper{
-    background-image: url(../images/david-marcu-78A265wPiO4-unsplash\ 1.png);
-    background-repeat: no-repeat;
     display: flex;
     justify-content: end;
-    width: 1240px;
-    margin: 0 auto;
 }
 .log-in-box{
     width: 500px;
     background: rgba(233, 233, 233, 0.25);
     backdrop-filter: blur(5px);
+    height: 100vh;
 }
 .content-container{
     width: 350px;
     margin: 0 auto;
+}
+a{
+    color: #153416;
 }
 /* ---content--- */
 /* ---switcher--- */
 .switcher{
     display: inline-block;
     position: relative;
-    padding: 10px;
+    width: 340px;
+    height: 36px;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-top: 60px;
+    transition: transform .3 linear;
 }
 .switcher input{
     display: none;
 }
-.switcher input + label{
-
+.switcher span{
+    position: absolute;
+    color: white;
 }
 
+.switcher .log-in{
+    left: 0;
+    top: 0;
+    transform: translate(70px, 12px);
+}
+.switcher .register{
+    right: 0;
+    top: 0;
+    transform: translate(-50px, 12px);
+}
+.switcher input + label::before{
+    position: absolute;
+    content: '';
+    background: #153416;
+    border-radius: 30px;
+    width: 168px;
+    height: 32px;
+    z-index: -1;
+    top: 2px;
+    left: 2px;
+}
+.switcher input:checked + label::before{
+    left: auto;
+    top: 2px;
+    right: 3px;
+    transition: all .3 linear;
+}
 
+/* ---log-In--- */
+h2{
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    padding: 80px 0px 29px 0px;
+}
+/* ---Input-area--- */
+.input-area input{
+    border-radius: 30px;
+    background: #929191;
+    border: 0;
+    padding: 0px 20px;
+    width: 300px;
+    height: 44px; 
+}
+.input-area input + input{
+    margin: 15px 0px 20px 0px;
+}
+.input-area input::placeholder{
+    color: white;
+}
+/* ---remember-me-box--- */
+.remember-me-box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.remember-me-box .remember-checkbox{
+    display: none;
+}
+.remember-check{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.remember-check::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    z-index: -1;
+}
+.remember-me-box .remember-checkbox:checked + .remember-check::before{
+    border: 1px solid #153416;
+    background-color: #153416;
+} 
+.remember-me-box .remember-checkbox:checked + .remember-check::after{
+    content: '';
+    width: 5px;
+    height: 13px;
+    transform: rotate(38deg);
+    position: absolute;
+    left: 5px;
+    top: 0;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff ;
+}
+/* ---Login Button--- */
+.log-in-button{
+    padding: 12px 150px; 
+    background: #153416;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 55px;
+}
+/* ---register-box--- */
+.register-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+/* --alternative-login-box--- */
+.alternative-login-box{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.icon-box{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.icon-box a svg{
+    width: 30px;
+    height: 30px;
+}
